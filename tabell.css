@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(124, 55, 118);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+
+
+/*använder collapse så att det inte blir något mellanrum mellan cellerna där jag har satt border*/
+table {
+    border-collapse: collapse;
+
+}
+
+
+/*använder nth-child för att färga varannan rad i tabellen, jag hade kunnat använda bara even och sen lägga en bakgrundsfärg
+i bodyn som jag har, men eftersom jag valde annan bakgrundsfärg än det jag har i tabellen så gjorde jag en odd också*/
+tbody tr:nth-child(even) {
+    background-color: rgb(226, 121, 137);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(182, 90, 104);
+}
+
+thead {
+    background-color: lightgrey;
+}
+
+/*la till padding så att kolumnerna inte blir så trånga och att texten får mer plats, alltså mer luft*/
+
+th {
+    border: 2px solid black;
+    padding: 0.3rem;
+
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 0.3rem;
+
+}
+
+
+/* jag använder first och last för att jag ville ha första kolumnen till vänster och sista kolumnen till höger
+kolumnerna i mitten får sin centrering från td ovanför*/
+tbody td:first-of-type {
+    text-align: left;
+}
+
+tbody td:last-of-type {
+    text-align: right;
+}
+
+caption {
+    caption-side: bottom;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+}
