@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabell</title>
+    <link rel="stylesheet" href="tabell.css">
+</head>
+
+<body>
+
+    <!--Jag använder table eftersom jag bygger en tabell, jag har tr för att det ska bli en rad och th för att det ska bli en rubrik.
+    Rubriken i min tr blir fetstil eftersom webbläsaren stylar den så eftersom de ligger i en th och säger att det är en rubrik. 
+    Sedan använder jag td i resterande tr, td är en vanlig datacell och blir därför inte fetstil. 
+    Jag använder thead för att webbläsaren ska veta att det är rubrikrader tex vid utskrift, så att det upprepas 
+    och jag använder tbody så att den ska veta att det är datarader. 
+    I detta läget när jag bara har en tbody så behövs det inte, för jag kan styla den i css ändå,
+    då det byggs en osynlig tbody, men om jag vill gruppera de olika dataraderna i kategorier så behövs fler tbody-element, 
+    tex om jag vill gruppera något så som planeter och blommor. 
+    De gör det också enklare att läsa koden för att se vart allt börjar och slutar.-->
+    <table>
+        <caption>Landmärken i världen</caption>
+        <thead>
+
+            <tr>
+                <th>Landmärke</th>
+                <th>Färdigställd</th>
+                <th>Land</th>
+                <th>Kostnad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Eiffeltornet</td>
+                <td>1889</td>
+                <td>Frankrike</td>
+                <td>400 miljoner kr</td>
+            </tr>
+
+            <tr>
+                <td>Golden Gate-bron</td>
+                <td>1937</td>
+                <td>USA</td>
+                <td>7 miljarder kr</td>
+            </tr>
+
+            <tr>
+                <td>Öresundsbron</td>
+                <td>2000</td>
+                <td>Sverige</td>
+                <td>30 miljarder kr</td>
+            </tr>
+
+
+            <tr>
+                <td>Burj Khalifa</td>
+                <td>2010</td>
+                <td>Förenade Arabemiraten</td>
+                <td>15 miljarder kr</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+</body>
+
+</html>
